@@ -1,0 +1,327 @@
+/*
+@media screen and (max-width: 1044px){/*1024px*
+	#cadreCanvas{
+		margin-top: 5px;
+	  height: 42%;
+	}
+
+	#boutons{
+	  top: 81%;
+	}
+}
+
+@media screen and (max-width: 833px){/*823px*
+	#slideshow {
+		width: 80%;
+		left: 10%;
+	}	
+	.box:nth-child(2){
+		height: 94%;
+	}
+	.box:nth-child(2) h2{
+		font-size: 90%;
+		}
+
+	#infoSlider{
+	  font-size: 20%;
+	}
+
+	#detailStations{
+		height: 23%;
+		font-size: 80%;
+	}
+
+	#detailStations p{
+		padding: 4%;
+	}
+	#inscription1{
+		margin-top: 10%;
+	}
+	
+	#reza{
+		width: 50%;
+		font-size: 80%;
+	}
+
+	#canvas{
+		height: 120px;
+	}
+
+	#bandeauInfos{
+		font-size: 80%;
+	}
+
+	#cadreCanvas{
+		margin-top: 23%;
+		font-size: 80%;
+	}
+}
+
+
+@media screen and (max-width: 689px){/*667px*
+	label #prenom{
+		width: 70%;
+	}
+	label #nom{
+		width: 70%;
+	}
+
+	#boutons{
+	  top: 80%;
+	}
+
+	#btEffacer{
+	  width: 40%;
+	}
+	#btValider{
+	  width: 40%;
+	}
+
+}
+
+@media screen and (max-width: 667px){/*667px*
+	#cadreCanvas h2{
+	  font-size: 90%;
+	}
+
+}
+
+@media screen and (max-width: 640px){/*640px*
+	#bandeauInfos{
+		padding: 5px;
+		}
+
+	#detailStations{
+		margin-top: -30px;
+		height: 26%;
+	}
+
+	#detailStations p{
+		width: 100%;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 619px){/*623px*
+	#boutons{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 575px){/*568px*
+	#bandeauInfos{
+		padding: 5px;
+	}
+
+	label #prenom{
+		left:4%;
+	}
+	label #nom{
+		left:4%;
+	}
+
+	#reza{
+		width: 50%;
+		left: 20%;
+	}
+
+	#cadreCanvas{
+		height: 37%;
+	}
+
+	#canvas{
+		height: 43%;
+	}
+
+	#btEffacer{
+	  font-size: 90%;
+	}
+	#btValider{
+	  font-size: 90%;
+	}
+
+}
+
+@media screen and (max-width: 479px){/*414px*
+	#bandeauInfos{
+		font-size: 70%;
+	}
+
+	#detailStations p{
+		font-size: 80%;
+	}
+
+	}
+*/
+@media screen and (max-width: 425px){/*425px*/
+	header{
+		width: 100%;
+		height: 200px;
+		flex-direction: column;
+	}
+
+	#titre{
+		width: 100%;
+		height: 100%;
+	}
+
+	header h1{
+		width: auto;
+		height: auto;
+	}
+	header p{
+		width: auto;
+		height: auto;
+		font-size: 1.2em;
+		top: 2px;
+	}
+	#cadreVelo{
+		width: 50%;
+		height: auto;
+		position: relative;
+		left: 0px;
+		justify-items: center;
+	}
+
+	#slideshow{
+		width: 100%;
+		height: 200px;
+		left: 0%;
+		top: 20px;
+	}
+	#infoSlider{
+		font-size: 0.5em;
+	}
+	#stopPlay{
+		top: 75%;
+	}
+
+	#cadreMap{
+		flex-direction: column;
+		height: 900px;
+		top: 40px;
+	}
+	#cadreMapInt {
+		width: 100%;
+		height: 300px;
+		padding-bottom: 70px;
+	}
+
+	.box:nth-child(1){
+		width: 100%;
+		height: 115%;
+	}
+
+	.box:nth-child(2){
+		position: relative;
+		left: 1%;
+		width: 98%;
+	}
+
+	#detailStations p{
+		font-size: 110%;
+		padding: 4px;
+		margin-top: 30px; 
+	}
+
+	#inscription1 {
+		height: auto;
+		padding: 5px;
+	}
+
+	label #prenom{
+		width: 100%;
+		height:30px;
+		left: 0px;
+		font-size: 20px;
+		}
+	label #nom{
+		width: 100%;
+		height:30px;
+		left: 0px;
+		font-size: 20px;
+		}
+
+	#reza{
+		width: 100%;
+		height: 40px;
+		font-size: 20px;
+		left: 0%;
+	}
+
+	#bandeauInfos{
+		width: 100%;
+		font-size: 90%;
+		border-radius:5px	
+	}
+
+	#boutons{
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 150px;
+		}
+	#btEffacer{
+		  height: 40px;
+		  width: 30%;
+		  font-size: 150%;
+		}
+	#btValider{
+		  height: 40px;
+		  width: 30%;
+		  font-size: 150%;
+		}
+
+	footer{
+		top:100px;
+	}
+}
+
+@media screen and (max-width: 237px){/*320px*/
+	
+	header h1{
+		font-size: 130%;
+	}
+	header p{
+		font-size: 80%;
+		left:0px;
+	}
+	#titre.center img{
+		left: 8%;
+	}
+}
+
+@media screen and (max-width: 50px){/*320px*/
+	body{
+		width: 200%;
+	}
+	header h1{
+		font-size: 130%;
+	}
+	header p{
+		font-size: 80%;
+		left:0px;
+	}
+	#titre.center img{
+		left: 8%;
+	}
+
+	#slideshow{
+		width: 100%;
+		height: 100px;
+	}
+	#cadreMap{
+		width: 100%;
+	}
+
+	.box:nth-child(1){
+		height: 100px;
+	}
+
+	.box:nth-child(2){
+		height: 100px;
+		top: 120px;
+	}
+}
+
+

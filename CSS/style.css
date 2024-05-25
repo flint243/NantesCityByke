@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; margin: 0px;}
+
+header{
+	width: 100%;
+	height: 100px;
+	background-color:aliceblue;
+	display: flex;
+	flex-direction: row;
+	padding: 3px;
+	z-index: 99;
+}
+#titre{
+	width: auto;
+	height: 100%;
+	position: relative;
+	top: 0px;
+	text-align: center;
+}
+
+header h1{
+	width: auto;
+	height: auto;
+	position: relative;
+	font-size: 200%;
+	margin:0px;
+}
+header p{
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 0px;
+	margin-left:3%;
+}
+#cadreVelo img{
+	width: 100px;
+	height: 85px;
+	position: relative;
+}
+
+/*--------------SLIDESHOW-------------*/
+#slideshow {
+	width: 50%;
+	height: 350px;
+	position: relative;
+	top: 120px;
+	left: 25%;
+  	border-radius: 10px;
+  	border: 1px solid grey;
+  	box-shadow: 3px 3px 13px grey;
+  	background-color:lightgreen;
+  	font-size: 100%;
+	overflow: hidden;
+}
+
+/* Mise en page du slider */
+#slider {
+  width: 400%;
+  height: 350px;
+  position: absolute;
+  float: left;
+  
+}
+
+/* Mise en page du conteneur d'image */
+#slider img{
+  width: 25%;
+  height: 100%;
+  float: left;
+  border-radius: 5px;
+}
+
+#infoSlider{
+  width: 90%;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 5%;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 1px #000;
+  float: left;
+  z-index: 99;
+}
+
+#bandeauColor{
+  width: 25%;
+  height: 90px;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  text-align: center;
+}
+
+
+/*BOUTONS GAUCHE-DROITE*/
+/* Position bouton gauche */
+#btLeft{
+	width:40px;
+	height:40px;
+	position: absolute;
+	top: 20%;
+	left: -15px;
+  	border-radius: 100%;
+  	background-color: red;
+  	opacity: 0.4;
+  	color: white;
+  	font-size: 1.2em;
+  	z-index: 20;
+  	padding: 1%;
+  	padding-left: 2%;
+}
+#btLeft:hover{
+	cursor: pointer;
+  	background-color: grey;
+}
+
+/* Position bouton droit */
+#btRight{
+	width:40px;
+	height:40px;
+	position: absolute;
+	top: 20%;
+	right: -15px;
+  	border-radius: 100%;
+  	background-color: red;
+  	opacity: 0.4;
+  	color: white;
+  	font-size: 1.2em;
+  	z-index: 20;
+  	padding: 1%;
+  	padding-left: 1%;
+}
+#btRight:hover{
+	cursor: pointer;
+  	background-color: grey;
+}
+
+
+
+/* PAUSE-LECTURE*/
+#stopPlay{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 85%;
+	left: 0%;
+	padding-bottom: 5px;
+	color: white;
+	z-index: 20;
+}
+
+#btnStop{
+	width: 30%;
+	height: 30px;
+	position: absolute;
+	top: 0%;
+	left: 20%;
+	border-radius: 5px;
+	background-color: red;
+	opacity: 0.4;
+	margin-top: 10px;
+	padding: 4px;
+	z-index: 20;
+}
+#btnStop:hover{
+	background-color: grey;
+	cursor: pointer;
+}
+
+#btnPlay{
+	width: 30%;
+	height: 30px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	border-radius: 5px;
+	background-color: red;
+	opacity: 0.4;
+	margin-top: 10px;
+	margin-left: 30px;
+	padding: 4px;
+	z-index: 20;
+}
+#btnPlay:hover{
+	background-color: grey;
+	cursor: pointer;
+}
+
+
+/*-----------MAP----------------------------*/
+#cadreMap{
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	height: 650px;
+	position: relative;
+	top: 150px;
+	padding: 1px;
+	justify-content: space-around;
+	background-color: #bbb;
+	border-radius: 15px;
+	box-shadow: 3px 3px 13px grey;
+}
+
+#cadreMapInt{
+	width: 60%;
+	height: 100%;
+	padding: 10px;
+}
+
+.box:nth-child(1){
+	width: 100%;
+	height: 85%;
+	position: relative;
+	left: 0%;
+	padding-right: 1px;
+	border:1px solid grey;
+	border-radius: 2%;
+	box-shadow: 3px 3px 3px grey;
+}
+
+#map.leaflet-container{
+	z-index: 0;
+}
+
+/*-------------------DETAILS DES STATIONS----------*/
+.box:nth-child(2){
+	width: 30%;
+	height: 95%;
+	position: relative;
+	left: auto;
+	top: 1%;
+	padding: 5px;
+	z-index:10;
+	border:1px solid black;
+	box-shadow: 3px 3px 13px grey;
+	background-color: white;
+}
+#infoStations h2{
+	width: 100%;
+	position: relative;
+	top: 0px;
+	color: purple;
+}
+
+#formulaire{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0%;
+	left: 0px;
+}
+#detailStations{
+	width: 100%;
+	height: 23%;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	background-color:#2271;
+}
+#detailStations p{
+	width: 100%;
+	height: 2%;
+	position: relative;
+	padding: 2%;
+	margin-top: 2px;
+	font-size: 100%;
+}
+
+#inscription1{
+	width: 90%;
+	height: 140px;
+	position: absolute;
+	top: 22%;
+	left: 5%;
+	background-color: orange;
+	border:1px solid black;
+	border-radius: 10px;
+	box-shadow: 3px 3px 13px grey;
+}
+
+#bandeauInfos{
+	width: auto;
+	height: 10%;
+	position: relative;
+	top: 4%;
+	padding: 10px;
+	background-color: white;
+	border:1px solid grey;
+	border-radius: 15px;
+	font-size: 100%;
+	box-shadow: 3px 3px 3px grey;
+}
+
+/*-------------RESERVATION / ENREGISTREMENT--------------*/
+#cadreCanvas{
+  width: 100%;
+  height: 35%;
+  position: relative;
+  top: 27%;
+  left: 0px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid grey;
+  background-color: rgb(240,240,240);
+  box-shadow: 3px 3px 3px grey;
+}
+
+#canvas{
+	width: 94%;
+	height: 162px;
+	position: absolute;
+	top: 52px;
+	left: 3%;
+  	background-color: white;
+	border:1px solid grey;
+  	box-shadow: 3px 3px 13px grey;  
+  	display: none;
+}
+
+#boutons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+  position: absolute;
+  top: 80%;
+  left: 0%;
+}
+#btEffacer{
+  width: 100px;
+  height: 30px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  color: white;
+  font-size: 1em;
+  border-radius: 15px;
+  background-color: orange;
+  box-shadow: 3px 3px 3px grey;
+}
+#btValider{
+  width: 100px;
+  height: 30px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  color: white;
+  font-size: 1em;
+  border-radius: 15px;
+  background-color: blue;
+  box-shadow: 3px 3px 3px grey;
+}
+label #prenom{
+	width: 30%;
+	height: 20px;
+	position: relative;
+	top: 10px;
+	left: 10%;
+}
+label #nom{
+	width: 30%;
+	height: 20px;
+	position: relative;
+	top: 20px;
+	left: 10%;
+}
+
+.saisie{
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 10px;
+	left: 10%;
+}
+
+#reza{
+	width: 30%;
+	height: 30px;
+	position: relative;
+	top: 50px;
+	left: 35%;
+	font-size: 1em;
+	box-shadow: 3px 3px 3px grey;
+	border-radius: 15px;
+}
+/*-----------footer----------------------------*/
+footer{
+	width:100%;
+	height:100px;
+	position:relative;
+	top:190px;
+	display:flex;
+	flex-wrap:wrap;
+	background-color: lightgreen;
+}
+footer h1{
+width: 100%;
+height: 40px;
+position: absolute;
+text-align: center;
+}
